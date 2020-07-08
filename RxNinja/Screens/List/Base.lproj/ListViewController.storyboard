@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CHD-Vr-8aa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List View Controller-->
+        <scene sceneID="Ctn-tz-7yf">
+            <objects>
+                <viewController storyboardIdentifier="ListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CHD-Vr-8aa" customClass="ListViewController" customModule="RxNinja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rod-mg-2aM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K8j-iR-iVQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Xly-Mh-FQZ">
+                                <rect key="frame" x="197" y="837" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K8j-iR-iVQ" firstAttribute="top" secondItem="I4O-mp-9uA" secondAttribute="top" id="AhB-JD-7Kj"/>
+                            <constraint firstItem="I4O-mp-9uA" firstAttribute="bottom" secondItem="Xly-Mh-FQZ" secondAttribute="bottom" constant="5" id="DOJ-rX-uSN"/>
+                            <constraint firstItem="K8j-iR-iVQ" firstAttribute="leading" secondItem="I4O-mp-9uA" secondAttribute="leading" id="RYE-j6-5uv"/>
+                            <constraint firstItem="Xly-Mh-FQZ" firstAttribute="centerX" secondItem="I4O-mp-9uA" secondAttribute="centerX" id="eGi-i8-ZqI"/>
+                            <constraint firstAttribute="bottom" secondItem="K8j-iR-iVQ" secondAttribute="bottom" id="gkp-MF-Ix1"/>
+                            <constraint firstItem="I4O-mp-9uA" firstAttribute="trailing" secondItem="K8j-iR-iVQ" secondAttribute="trailing" id="rJU-hE-Vqc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I4O-mp-9uA"/>
+                    </view>
+                    <connections>
+                        <outlet property="indicatorView" destination="Xly-Mh-FQZ" id="aMj-29-oJf"/>
+                        <outlet property="tableView" destination="K8j-iR-iVQ" id="8B6-O4-Nld"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Shy-L6-vGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="19"/>
+        </scene>
+    </scenes>
+</document>

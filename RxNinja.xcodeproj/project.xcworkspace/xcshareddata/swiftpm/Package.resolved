@@ -2,6 +2,24 @@
   "object": {
     "pins": [
       {
+        "package": "Action",
+        "repositoryURL": "git@github.com:RxSwiftCommunity/Action.git",
+        "state": {
+          "branch": null,
+          "revision": "1079e557787a3ffe88f833eb5f637dcf1396421b",
+          "version": "4.1.0"
+        }
+      },
+      {
+        "package": "APIKit",
+        "repositoryURL": "git@github.com:ishkawa/APIKit.git",
+        "state": {
+          "branch": null,
+          "revision": "f24f05616f8972fec937c2f069491468a8fabf85",
+          "version": "5.1.0"
+        }
+      },
+      {
         "package": "RxSwift",
         "repositoryURL": "git@github.com:ReactiveX/RxSwift.git",
         "state": {
